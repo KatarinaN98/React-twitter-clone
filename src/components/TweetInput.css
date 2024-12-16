@@ -1,0 +1,40 @@
+/* Default size */
+.tweet-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+  }
+  
+  /* Smaller size on mobile screens */
+  @media (max-width: 768px) {
+    .tweet-avatar {
+      width: 30px;  /* Smaller size for mobile */
+      height: 30px;
+    }
+  }
+  
+  .tweet-input-header .tweet-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .tweet-input-header .tweet-avatar {
+      width: 30px;  /* Smaller size for mobile */
+      height: 30px;
+    }
+  }
+  .tweet-header img {
+    width: 40px;  /* Set the width of the profile picture */
+    height: 40px; /* Set the height to match */
+    border-radius: 50%;  /* Make the avatar circular */
+    object-fit: cover;  /* Ensure the image covers the circle without stretching */
+    margin-right: 10px; /* Spacing between avatar and tweet content */
+  }
+  
+  
