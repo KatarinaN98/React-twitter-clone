@@ -1,4 +1,3 @@
-// App component: App.jsx
 import React, { useState, useEffect, createContext } from 'react';
 import TweetInput from './TweetInput';
 import TweetList from './TweetList';
@@ -12,12 +11,16 @@ export const AppContext = createContext();
 const App = () => {
   const [tweets, setTweets] = useState([]);
   const [user, setUser] = useState({ name: 'User', profilePicture: 'user.jpg' });
-  const [theme, setTheme] = useState('light');
 
+  // Get the current theme from localStorage (or default to 'light')
+  const savedTheme = localStorage.getItem('theme') || 'light';
+  const [theme, setTheme] = useState(savedTheme);
+
+  // Set the theme in localStorage whenever it changes
   useEffect(() => {
-    // Fetch initial data from remote server, ex. https://jsonplaceholder.org/posts
-    // ...
-  }, []);
+    localStorage.setItem('theme', theme);
+    document.body.className = theme;  // Set the class on the body element for global theme styles
+  }, [theme]);
 
   const addTweet = (tweet) => {
     setTweets([tweet, ...tweets]);
@@ -39,3 +42,4 @@ const App = () => {
 };
 
 export default App;
+
