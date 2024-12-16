@@ -1,6 +1,6 @@
 # Twitter Clone with React and Vite
 
-Welcome to the **Twitter Clone** project, built using **React** and **Vite**! This application is a simple but fully functional clone of Twitter, featuring basic tweet functionalities like posting, liking, retweeting, and replying to tweets.
+Welcome to my **Twitter Clone** project, built using **React** and **Vite**! This application is a simple but fully functional clone of Twitter, featuring basic tweet functionalities like posting, liking, retweeting, and replying to tweets.
 
 This project uses **React** for the frontend and **Vite** for fast development with **Hot Module Replacement (HMR)**. The application has been structured in a modular way, following best practices to create reusable components for tweets, profiles, and interactions.
 
@@ -33,15 +33,4 @@ This project uses **React** for the frontend and **Vite** for fast development w
 
 This template provides a minimal setup to get React working in Vite with HMR and some basic ESLint rules.
 
-### Prerequisites
 
-Before you start, ensure you have the following installed:
-- **Node.js** (preferably the latest LTS version)
-- **npm** or **yarn**
-
-### Getting Started
-
-1. **Clone the repository**:
-
-   ```bash
-   git clone https://github.com/your-username/twitter-clone.git
